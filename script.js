@@ -8,10 +8,9 @@ var upperCase = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M'
 var charChoice = [];
 //Empty string that will be filled when pw is generated if all questions are answered.
 var generatedPw = '';
-var pwLength = 8;
 
 //Function that will prompt the user with questions on what they want to use for their pw.
-function passwordQuestions(){
+function passwordQuestions() {
 
     pwLength = prompt('How many characters between 8 - 128 do you want your password to be?');
 
@@ -49,12 +48,14 @@ function passwordQuestions(){
             alert("Special characters will not be added to your password!")
         }; 
         
-        charChoice = charChoice.concat()
+        charChoice = charChoice.concat() //Takes all users choices and puts it into one array together
         console.log(charChoice);
 
-        if(charChoice.length = [0]) {
+        // if user doesn't pick any choices alert pops and then user is brought back to the beginning of function to start again. 
+        if(charChoice.length === 0) {
             alert("You must choose yes for 1 choice!")
-        } else {
+            return passwordQuestions();
+        } else { //If the user chooses atleast 1 choice this alert will pop up.
             alert("Lets generate a new password!")
         };
 };
@@ -77,13 +78,13 @@ generateBtn.addEventListener("click", writePassword);
 
 //Function that will start the passwordQuestions prompt when user hits generate password button.
 function generatePassword() {
-    passwordQuestions();
+    passwordQuestions(); //calls function passwordQuestions()
 
     for(var p = 0; p < pwLength; p++) {
-        generatedPw += charChoice[Math.floor(Math.random() * charChoice.length)]
+        generatedPw += charChoice[(Math.random() * charChoice.length)]
     };
-    console.log(generatedPw.length)
-    console.log(error);
-    return generatedPw;
+    console.log(generatedPw.length) //Show length of generatedPw
+    
+    return generatedPw; //Prints the generatedPw to text box
     
 };
