@@ -28,3 +28,4 @@ THEN the password is either displayed in an alert or written to the page
 
 
 ## Screen-shot
+<img src="https://github.com/Aslaviero/Password-Generator/blob/main/pwgeneratorsc1.png">
