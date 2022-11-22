@@ -29,3 +29,9 @@ THEN the password is either displayed in an alert or written to the page
 
 ## Screen-shot
 <img src="https://github.com/Aslaviero/Password-Generator/blob/main/pwgeneratorsc1.png">
+<img src="https://github.com/Aslaviero/Password-Generator/blob/main/pwgeneratorsc3.png">
+<img src="https://github.com/Aslaviero/Password-Generator/blob/main/pwgeneratorsc4.png">
+<img src="https://github.com/Aslaviero/Password-Generator/blob/main/pwgeneratorsc.png">
+
+## Deployed Site
+https://aslaviero.github.io/Password-Generator/
